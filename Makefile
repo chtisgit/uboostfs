@@ -14,7 +14,7 @@ filesystem.a: $(OBJS)
 	$(CXX) -O2 -g -Wall -std=c++11 $(CFLAGS) -c -o $@ $<
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) filesystem.a
 
 .PHONY: all clean
 
