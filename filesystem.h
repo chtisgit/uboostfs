@@ -21,6 +21,7 @@ public:
 	auto operator+(const Path& p) const -> Path;
 	auto operator/(const Path& p) const -> Path;
 	auto operator==(const Path& p) const -> bool;
+	auto operator!=(const Path& p) const -> bool;
 	auto filename() const -> Path;
 	auto extension() const -> Path;
 	auto stem() const -> Path;

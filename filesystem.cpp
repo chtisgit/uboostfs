@@ -117,6 +117,10 @@ auto Path::operator==(const Path& p) const -> bool
 {
 	return strcmp(canonical(s).c_str(),canonical(p.s).c_str()) == 0;
 }
+auto Path::operator!=(const Path& p) const -> bool
+{
+	return !(*this == p);
+}
 auto Path::parent_path() const -> Path
 {
 	size_t i = last_slash(s);
